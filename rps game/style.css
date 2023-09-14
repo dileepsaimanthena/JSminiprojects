@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+body{
+    background-color: rgb(96, 48, 118);
+}
+header{
+    text-align: center;
+    color:black;
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+}
+.score{
+    width: 200px;
+    margin:auto;
+    border: 1px solid white;
+    position: relative;
+    text-align: center;
+    font-size:40px;
+    padding: 10px;
+    margin-top:50px;
+    margin-bottom: 30px;
+    color: white;
+}
+.batch{
+    position: absolute;
+    font-size: 16px;
+    height: fit-content;
+    width: max-content;
+    padding:5px;
+    background-color: brown;
+    top: 20px;
+    
+}
+#p{
+    left: -40px;
+    
+}
+#c{
+    right: -30px;
+}
+.container{
+    width: 1000px;
+    height:450px;
+    border: 1px solid white;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    text-align: center;
+    position: relative;
+}
+
+.Computerdisp{
+    border-right:1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Playerdisp{
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+.Computerdisp img{
+    border: 3px solid black;
+    border-radius:50%;
+    height:300px;
+}
+.Playerdisp button{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.inpg{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Playerdisp button img{
+    height: 130px;
+}
+#counter{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(183, 198, 209, 0.5); 
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+}
+.mainbtn{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    width:fit-content;
+    display: flex;
+    gap: 20px;
+}
+.mainbtn button{
+    height: 80px;
+    width: 120px;
+    font-size: 20px;
+    border-radius:10px;
+    color: #fff;
+}
+#start{
+    background-color: green;
+}
+#reset{
+    background-color: red;
+}
